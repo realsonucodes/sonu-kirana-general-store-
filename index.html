@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonu Kirana & General Store</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success d-flex align-items-center" href="#">
+                <img src="assets/images/logo.jpeg" alt="Logo" width="45" height="45"
+                    class="me-2 rounded-circle border border-2 border-success">
+                <span>Sonu Kirana & General Store</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="login.html" class="btn btn-outline-success btn-sm rounded-pill px-3">
+                        <i class="bi bi-person-circle me-1"></i> Owner Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000"
+            data-bs-pause="false">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner h-100">
+                <!-- Slide 1 -->
+                <div class="carousel-item active h-100">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1920&h=800"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Fresh Groceries">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item h-100">
+                    <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=1920&h=800"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Quality Products">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item h-100">
+                    <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&q=80&w=1920&h=800"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Daily Essentials">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item h-100">
+                    <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&q=80&w=1920&h=800"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Fresh Vegetables">
+                    <div class="carousel-overlay"></div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="carousel-item h-100">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=1920&h=800"
+                        class="d-block w-100 h-100 object-fit-cover" alt="Premium Spices">
+                    <div class="carousel-overlay"></div>
+                </div>
+
+                <!-- Fixed Content over Slider -->
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                    <h1 class="display-3 fw-bold text-white mb-3 text-shadow">Sonu Kirana & General Store</h1>
+                    <p class="lead text-white mb-4 fs-3 text-shadow">"Daily Grocery at Best Price"</p>
+                    <div class="d-flex gap-3">
+                        <a href="#products" class="btn btn-success btn-lg px-4 rounded-pill shadow">View Products</a>
+                        <a href="#contact" class="btn btn-warning btn-lg px-4 rounded-pill shadow text-white">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success">Shop by Category</h2>
+                <div class="title-underline bg-success mx-auto mt-2"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
+                                width="64" height="64" alt="Atta & Rice Icon" 
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        </div>
+                        <h6 class="fw-bold mb-0">Atta & Rice</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbadcbaf?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
+                                width="64" height="64" alt="Oil & Ghee Icon" 
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        </div>
+                        <h6 class="fw-bold mb-0">Oil & Ghee</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1558961363-a0e2343fcbf4?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
+                                width="64" height="64" alt="Snacks & Biscuits Icon" 
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        </div>
+                        <h6 class="fw-bold mb-0">Snacks & Biscuits</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1544787210-22bb60761214?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
+                                width="64" height="64" alt="Tea & Coffee Icon" 
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        </div>
+                        <h6 class="fw-bold mb-0">Tea & Coffee</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
+                                width="64" height="64" alt="Spices Icon" 
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        </div>
+                        <h6 class="fw-bold mb-0">Spices</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
+                                width="64" height="64" alt="Daily Essentials Icon" 
+                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        </div>
+                        <h6 class="fw-bold mb-0">Daily Essentials</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Display Section -->
+    <section id="products" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success">Our Products</h2>
+                <div class="title-underline bg-success mx-auto mt-2"></div>
+            </div>
+
+            <div id="products-grid" class="row g-4">
+                <!-- Products will be loaded dynamically here via JavaScript -->
+                <div class="col-12 text-center py-5" id="products-loading">
+                    <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Loading fresh products...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success">Special Offers</h2>
+                <div class="title-underline bg-success mx-auto mt-2"></div>
+            </div>
+
+            <!-- Offers loaded dynamically from Firebase -->
+            <div id="dynamic-offers-container" class="row g-4">
+                <div class="col-12 text-center py-5">
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Loading offers...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success">Contact Us</h2>
+                <div class="title-underline bg-success mx-auto mt-2"></div>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm rounded-4 h-100 p-4">
+                        <h4 class="fw-bold mb-4">Get in Touch</h4>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-box bg-success text-white rounded-circle me-3 shadow-sm">
+                                <i class="bi bi-geo-alt-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Shop Address</h6>
+                                <p class="text-muted mb-0">Shop No. 2, Sonkukra Road, Masaurhi - 804452</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-box bg-success text-white rounded-circle me-3 shadow-sm">
+                                <i class="bi bi-telephone-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Phone Number</h6>
+                                <p class="text-muted mb-0">+91 92622 22939</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-box bg-success text-white rounded-circle me-3 shadow-sm">
+                                <i class="bi bi-envelope-fill fs-5"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Email</h6>
+                                <p class="text-muted mb-0">sonuk066495@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-top">
+                            <a href="https://wa.me/919876543210" target="_blank"
+                                class="btn btn-success btn-lg w-100 rounded-pill d-flex align-items-center justify-content-center">
+                                <i class="bi bi-whatsapp fs-5 me-2"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form & Map -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold mb-4">Send us a Message</h5>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control form-control-lg bg-light border-0"
+                                            placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control form-control-lg bg-light border-0"
+                                            placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control form-control-lg bg-light border-0" rows="4"
+                                            placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit"
+                                            class="btn btn-warning btn-lg text-white rounded-pill px-5 fw-medium">Send
+                                            Message</button>
+                                    </div>
+                                    <!-- Success Banner -->
+                                    <div id="contactSuccessBanner" class="col-12 d-none">
+                                        <div
+                                            class="alert alert-success border-0 rounded-3 d-flex align-items-center shadow-sm mb-0">
+                                            <i class="bi bi-check-circle-fill fs-4 me-3 text-success"></i>
+                                            <div>
+                                                <strong>Message Send Ho Gaya! ✅</strong><br>
+                                                <span class="small text-muted">Hum jald hi aapse contact karenge.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Google Map Placeholder (Embed) -->
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden" style="height: 250px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14421.417036648831!2d85.034931!3d25.5807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed587c69999999%3A0x8999999999999999!2sMasaurhi%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3 text-success"><i class="bi bi-shop me-2"></i>Sonu Kirana</h4>
+                    <p class="text-white-50">Daily Grocery at Best Price</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Details</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Shop No. 2, Sonkukra Road, Masaurhi - 804452
+                        </li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +91 98765 43210</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> sonuk066495@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white-50 text-decoration-none fs-4 hover-success"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none fs-4 hover-success"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50 text-decoration-none fs-4 hover-success"><i
+                                class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4 mb-3">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2020 Sonu Kirana & General Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (must load BEFORE module script) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script type="module" src="js/script.js"></script>
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:9999"></div>
+</body>
+
+</html>

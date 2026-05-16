@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Custom Colors (enhancing Bootstrap's defaults for our brand) */
+:root {
+    --brand-green: #28a745;
+    --brand-green-dark: #1e7e34;
+    --brand-orange: #fd7e14;
+    --brand-orange-dark: #e86e04;
+}
+
+/* Navbar overrides */
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+.nav-link {
+    font-weight: 500;
+    color: #495057 !important;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-green) !important;
+}
+
+/* Hero Carousel */
+.hero-section {
+    height: 80vh;
+    min-height: 500px;
+}
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.carousel-indicators {
+    z-index: 3;
+    margin-bottom: 2rem;
+}
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    margin: 0 5px !important;
+    background-color: rgba(255,255,255,0.5) !important;
+    border: 2px solid transparent !important;
+}
+.carousel-indicators button.active {
+    background-color: var(--brand-green) !important;
+    border-color: white !important;
+    transform: scale(1.2);
+}
+
+/* ─── SHOP BY CATEGORY — Fresh Green Leaf Pattern ─────────────────────── */
+#categories {
+    background-color: #f0faf3;
+    background-image:
+        radial-gradient(circle at 20% 80%, rgba(40,167,69,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(32,201,151,0.1) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328a745' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+}
+#categories::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--brand-green), #20c997, var(--brand-green));
+}
+
+/* ─── OUR PRODUCTS — Premium Dot Grid Pattern ──────────────────────────── */
+#products {
+    background-color: #ffffff;
+    background-image:
+        radial-gradient(circle at 90% 10%, rgba(40,167,69,0.06) 0%, transparent 40%),
+        radial-gradient(circle at 10% 90%, rgba(253,126,20,0.05) 0%, transparent 40%),
+        radial-gradient(circle, rgba(40,167,69,0.15) 1px, transparent 1px);
+    background-size: auto, auto, 28px 28px;
+    position: relative;
+}
+#products::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--brand-orange), #ffc107, var(--brand-orange));
+}
+
+/* ─── SPECIAL OFFERS — Warm Diagonal Gradient ──────────────────────────── */
+#offers {
+    background-color: #1a1a2e;
+    background-image:
+        linear-gradient(135deg, #0f3460 0%, #16213e 40%, #1a1a2e 100%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    position: relative;
+    overflow: hidden;
+}
+#offers::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(40,167,69,0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+#offers::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; left: -150px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(253,126,20,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+/* Offers section text color override for dark bg */
+#offers h2.text-success {
+    color: #4ade80 !important;
+}
+#offers .title-underline {
+    background-color: #4ade80 !important;
+}
+
+/* Title Underline & Transitions */
+.title-underline {
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+}
+.transition-up {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.transition-up:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    cursor: pointer;
+}
+.category-card:hover .icon-wrapper {
+    background-color: var(--brand-green) !important;
+    color: white !important;
+}
+.icon-wrapper {
+    transition: all 0.3s ease;
+}
+
+/* Category Cards — glass effect on green bg */
+.category-card {
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(40,167,69,0.1) !important;
+    transition: all 0.3s ease;
+}
+.category-card:hover {
+    border-color: rgba(40,167,69,0.4) !important;
+    background: linear-gradient(135deg, #fff 0%, #f0faf3 100%) !important;
+}
+
+/* Special Offers Section */
+.offer-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4)!important;
+}
+.offer-image-wrapper {
+    overflow: hidden;
+}
+.offer-image-wrapper img {
+    transition: transform 0.5s ease;
+}
+.offer-card:hover .offer-image-wrapper img {
+    transform: scale(1.1);
+}
+.offer-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 100%);
+}
+.shop-btn {
+    transition: all 0.3s ease;
+}
+.offer-card:hover .shop-btn {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    background-color: var(--brand-orange-dark);
+}
+
+/* Pulsing Animation for Discount Badge */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(220, 53, 69, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 53, 69, 0); }
+}
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+/* Contact Section */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Utility Overrides */
+.btn-warning {
+    background-color: var(--brand-orange);
+    border-color: var(--brand-orange);
+}
+.btn-warning:hover {
+    background-color: var(--brand-orange-dark);
+    border-color: var(--brand-orange-dark);
+}
+.text-success { color: var(--brand-green) !important; }
+.bg-success { background-color: var(--brand-green) !important; }
+.btn-success { background-color: var(--brand-green); border-color: var(--brand-green); }
+.btn-success:hover { background-color: var(--brand-green-dark); border-color: var(--brand-green-dark); }
+
