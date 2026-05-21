@@ -36,7 +36,7 @@
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#categories">Categories</a>
+                        <a class="nav-link" href="#testimonials">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#offers">Offers</a>
@@ -127,73 +127,129 @@
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section id="categories" class="py-5">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
         <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="fw-bold text-success">Shop by Category</h2>
+                <h2 class="fw-bold text-success">Customer Reviews</h2>
                 <div class="title-underline bg-success mx-auto mt-2"></div>
             </div>
 
-            <div class="row g-4">
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
-                        <div class="mb-3">
-                            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
-                                width="64" height="64" alt="Atta & Rice Icon" 
-                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+            <!-- Testimonials Grid with Mobile Horizontal Scroll -->
+            <style>
+                .testimonials-scroll {
+                    scroll-snap-type: x mandatory;
+                    -webkit-overflow-scrolling: touch;
+                    scrollbar-width: none;
+                }
+                .testimonials-scroll::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+            <div class="row g-4 justify-content-md-center flex-nowrap flex-md-wrap overflow-x-auto pb-4 pt-2 testimonials-scroll">
+                <!-- Review 1 -->
+                <div class="col-11 col-md-6 col-lg-4 flex-shrink-0" style="scroll-snap-align: center;">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 transition-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center fw-bold fs-4 me-3" style="width: 50px; height: 50px;">
+                                R
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Ravi Kumar</h6>
+                                <div class="text-muted small">11 months ago</div>
+                            </div>
                         </div>
-                        <h6 class="fw-bold mb-0">Atta & Rice</h6>
+                        <div class="text-warning fs-5">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
-                        <div class="mb-3">
-                            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbadcbaf?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
-                                width="64" height="64" alt="Oil & Ghee Icon" 
-                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                
+                <!-- Review 2 -->
+                <div class="col-11 col-md-6 col-lg-4 flex-shrink-0" style="scroll-snap-align: center;">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 transition-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Nitish+Kumar&background=random&color=fff&size=100" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;" alt="Nitish Kumar">
+                            <div>
+                                <h6 class="fw-bold mb-0">NITISH KUMAR</h6>
+                                <div class="text-muted small">11 months ago</div>
+                            </div>
                         </div>
-                        <h6 class="fw-bold mb-0">Oil & Ghee</h6>
+                        <div class="text-warning fs-5">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
-                        <div class="mb-3">
-                            <img src="https://images.unsplash.com/photo-1558961363-a0e2343fcbf4?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
-                                width="64" height="64" alt="Snacks & Biscuits Icon" 
-                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+
+                <!-- Review 3 -->
+                <div class="col-11 col-md-6 col-lg-4 flex-shrink-0" style="scroll-snap-align: center;">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 transition-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Abhishek+Raj&background=random&color=fff&size=100" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;" alt="Abhishek Raj">
+                            <div>
+                                <h6 class="fw-bold mb-0">Abhishek Raj</h6>
+                                <div class="text-muted small">1 review &middot; 11 months ago</div>
+                            </div>
                         </div>
-                        <h6 class="fw-bold mb-0">Snacks & Biscuits</h6>
+                        <div class="text-warning fs-5">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
-                        <div class="mb-3">
-                            <img src="https://images.unsplash.com/photo-1544787210-22bb60761214?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
-                                width="64" height="64" alt="Tea & Coffee Icon" 
-                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+
+                <!-- Review 4 -->
+                <div class="col-11 col-md-6 col-lg-4 flex-shrink-0" style="scroll-snap-align: center;">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 transition-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Rohit+Kumar&background=random&color=fff&size=100" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;" alt="Rohit Kumar">
+                            <div>
+                                <h6 class="fw-bold mb-0">Rohit Kumar (34)</h6>
+                                <div class="text-muted small">11 months ago</div>
+                            </div>
                         </div>
-                        <h6 class="fw-bold mb-0">Tea & Coffee</h6>
+                        <div class="text-warning fs-5">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
-                        <div class="mb-3">
-                            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
-                                width="64" height="64" alt="Spices Icon" 
-                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+
+                <!-- Review 5 -->
+                <div class="col-11 col-md-6 col-lg-4 flex-shrink-0" style="scroll-snap-align: center;">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 transition-up">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://ui-avatars.com/api/?name=Vishvajeet+Kumar+Vishu&background=random&color=fff&size=100" class="rounded-circle me-3" style="width: 50px; height: 50px; object-fit: cover;" alt="Vishvajeet Kumar Vishu">
+                            <div>
+                                <h6 class="fw-bold mb-0 text-break">VISHVAJEET KUMAR VISHU</h6>
+                                <div class="text-muted small">2 reviews &middot; 1 photo &middot; 6 months ago</div>
+                            </div>
                         </div>
-                        <h6 class="fw-bold mb-0">Spices</h6>
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="category-card text-center p-4 bg-white rounded-4 shadow-sm h-100 transition-up">
-                        <div class="mb-3">
-                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128" class="rounded-circle shadow-sm object-fit-cover"
-                                width="64" height="64" alt="Daily Essentials Icon" 
-                                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=60&w=128';">
+                        <div class="text-warning mb-3 fs-5">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
                         </div>
-                        <h6 class="fw-bold mb-0">Daily Essentials</h6>
+                        <!-- Review image -->
+                        <div class="rounded-3 overflow-hidden" style="height: 180px;">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=500" class="w-100 h-100 object-fit-cover" alt="Store Image by Customer">
+                        </div>
                     </div>
                 </div>
             </div>
